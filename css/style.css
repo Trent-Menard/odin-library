@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 2px dashed darkviolet;
+    /*width: 99vw;*/
+    /*height: 99vh;*/
+}
+
+#bookshelf {
+    width: 20vw;
+}
+
+form > div * {
+    margin: 10px;
+}
+
+#form-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons-div > button  {
+    padding: 10px;
+    border-radius: 16px;
+    color: white;
+}
+
+#cancel-btn {
+    background-color: crimson;
+    border-color: crimson;
+}
+#submit-btn {
+    background-color: forestgreen;
+    border-color: forestgreen;
+}

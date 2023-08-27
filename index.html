@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <img id="bookshelf" src="img/bookshelf.svg" alt="bookshelf">
+    <button id="new-book-button">New Book</button>
+
+    <dialog id="new-book-dialog">
+        <form>
+            <div id="form-div">
+
+                <label for="book-title">Book Title:</label>
+                <input id="book-title" type="text">
+
+                <label for="book-author">Book Author:</label>
+                <input id="book-author" type="text">
+
+                <label for="book-pages">Number of Pages:</label>
+                <input id="book-pages" type="text">
+            </div>
+
+            <div id="buttons-div">
+                <button id="cancel-btn" formmethod="dialog">Cancel</button>
+                <button id="submit-btn" type="submit">Submit</button>
+            </div>
+
+        </form>
+    </dialog>
+
+<!--    <img src="book.svg" alt="book" style="width:150px; height:150px">-->
+</body>
+</html>
