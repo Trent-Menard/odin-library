@@ -7,11 +7,33 @@
     <script src="js/main.js" defer></script>
 </head>
 
-<body>
-    <img id="bookshelf" src="img/bookshelf.svg" alt="bookshelf">
-    <button id="new-book-button">New Book</button>
+<header>
+    <div id="logo-div">
+        <img src="./img/bookshelf.svg" alt="book" style="width:65px; height:65px">
+        <h1>Welcome back!</h1>
+    </div>
 
-    <dialog id="new-book-dialog">
+    <div id="add-book-button-div">
+        <button id="add-book-btn">Add a book</button>
+    </div>
+</header>
+
+<body>
+    <h2>Your Library</h2>
+
+    <div id="library-div">
+
+        <div class="book-img">
+            <img src="./img/book.svg" alt="book" style="width:125px; height:125px">
+
+            <div class="book-info">
+                <h2><em>The Hobbit</em></h2>
+                <h3>J. R. R. Tolkien</h3>
+            </div>
+        </div>
+    
+    </div>
+<!--    <dialog id="new-book-dialog">
         <form>
             <div id="form-div">
 
@@ -31,8 +53,6 @@
             </div>
 
         </form>
-    </dialog>
-
-<!--    <img src="book.svg" alt="book" style="width:150px; height:150px">-->
+    </dialog>-->
 </body>
 </html>

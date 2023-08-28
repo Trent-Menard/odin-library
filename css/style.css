@@ -1,14 +1,72 @@
 
+* {
+    font-family: Helvetica, serif;
+}
+
 body {
+    /*margin: 0;*/
+    /*border: 2px dashed darkviolet;*/
+}
+
+header {
+    border: 5px inset rgb(164,116,73);
+    padding: 10px;
+}
+
+#logo-div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#add-book-btn {
+    color: #ffffff;
+    background-color: #2d63c8;
+    font-size: 20px;
+    border: 1px solid #2d63c8;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer
+}
+
+#add-book-btn:hover {
+    color: #2d63c8;
+    background-color: #ffffff;
+}
+
+#add-book-button-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    border: 2px dashed darkviolet;
-    /*width: 99vw;*/
-    /*height: 99vh;*/
 }
 
+.book-img {
+    display: inline-flex;
+    border: 2px solid black;
+}
+
+.book-info {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid darkgreen;
+}
+
+#library-div {
+    border: 2px solid deeppink;
+}
+
+
+
+.book-info > h2, h3 {
+    margin: 0;
+}
+
+/*
 #bookshelf {
     width: 20vw;
 }
@@ -42,4 +100,4 @@ form > div * {
 #submit-btn {
     background-color: forestgreen;
     border-color: forestgreen;
-}
+}*/
