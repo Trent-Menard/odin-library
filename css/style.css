@@ -41,28 +41,30 @@ header {
     justify-content: center;
 }
 
-.book-img {
-    display: inline-flex;
-    border: 2px solid black;
+#library-div {
+    border: 5px solid black;
 }
 
-.book-info {
+.book-div {
+    display: inline-flex;
+    border: 2px solid darkgreen;
+}
+
+.book-img-div {
+    border: 2px solid crimson;
+}
+
+.book-info-div {
     margin: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    border: 2px solid darkgreen;
-}
-
-#library-div {
     border: 2px solid deeppink;
 }
 
-
-
-.book-info > h2, h3 {
+.book-info-div > h2, h3 {
     margin: 0;
 }
 
