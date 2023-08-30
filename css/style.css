@@ -42,12 +42,9 @@ header {
 }
 
 #library-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
     border: 5px solid black;
-}
-
-.book-div {
-    display: inline-flex;
-    border: 2px solid darkgreen;
 }
 
 .book-img-div {
@@ -55,18 +52,45 @@ header {
 }
 
 .book-info-div {
+    display: inline-flex;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 16px;
-    display: flex;
-    flex-direction: column;
+
+    min-height: 125px;
+    min-width: 125px;
+
+    /*
     align-items: center;
     justify-content: center;
+    */
 
     border: 2px solid deeppink;
 }
 
-.book-info-div > h2, h3 {
-    margin: 0;
-}
+/*.book-info-div > h2, h3 {*/
+/*    margin: 0 0;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 #bookshelf {
