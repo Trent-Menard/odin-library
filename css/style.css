@@ -1,35 +1,120 @@
 
+* {
+    font-family: Arial, sans-serif;
+}
+
 body {
+    background-color: rgb(158, 152, 152);
+}
+
+header {
+    border: 5px inset rgb(164,116,73);
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#logo-div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#add-book-btn {
+    color: #ffffff;
+    background-color: #2d63c8;
+    font-size: 20px;
+    border: 1px solid #2d63c8;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer
+}
+
+#add-book-btn:hover {
+    color: #2d63c8;
+    background-color: #ffffff;
+}
+
+#add-book-button-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    border: 2px dashed darkviolet;
-    /*width: 99vw;*/
-    /*height: 99vh;*/
 }
 
-#bookshelf {
-    width: 20vw;
-}
-
-form > div * {
-    margin: 10px;
-}
-
-#form-div {
+#library-div {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border: 5px inset rgb(164,116,73);
 }
 
-#buttons-div {
+.book-info-div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: start;
+    margin: 12px;
+    padding: 8px;
+    /*border: 2px solid deeppink;*/
+    border: 5px inset rgb(164,116,73);
+    /*min-width: 300px;*/
+    /*min-height: 300px;*/
+}
+
+.book-info-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-info-buttons {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.book-info-img {
+    width: 180px;
+    height: 250px;
+}
+
+.read-status.yes {
+    color: forestgreen;
+}
+
+.read-status.no {
+    color: crimson;
+}
+
+.delete-btn, .read-btn {
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.delete-btn {
+    background-color: crimson;
+    border: 1px solid crimson;
+}
+
+.read-btn {
+    background-color: #2d63c8;
+    border: 1px solid #2d63c8;
+}
+
+#form-buttons-div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#buttons-div > button  {
+
+#form-buttons-div > button  {
+    margin: 10px;
     padding: 10px;
     border-radius: 16px;
     color: white;
@@ -38,6 +123,7 @@ form > div * {
 #cancel-btn {
     background-color: crimson;
     border-color: crimson;
+
 }
 #submit-btn {
     background-color: forestgreen;
