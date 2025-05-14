@@ -21,35 +21,42 @@
 <body>
     <h2>Your Library</h2>
     <div id="library-div">
-<!--        <div class="book-info-div">-->
-<!--            <img src="./img/book.svg" alt="book" style="width:125px; height:125px">-->
-<!--            <div>-->
-<!--                <h2><em>The Hobbit</em></h2>-->
-<!--                <h3>J. R. R. Tolkien</h3>-->
-<!--            </div>-->
-<!--        </div>-->
     </div>
 
-<!--    <dialog id="new-book-dialog">
+    <dialog id="new-book-dialog">
         <form>
-            <div id="form-div">
-
+            <fieldset>
+                <legend>Title</legend>
                 <label for="book-title">Book Title:</label>
-                <input id="book-title" type="text">
+                <input id="book-title" type="text" required>
+            </fieldset>
 
+            <fieldset>
+                <legend>Author</legend>
                 <label for="book-author">Book Author:</label>
-                <input id="book-author" type="text">
+                <input id="book-author" type="text" required>
+            </fieldset>
 
+            <fieldset>
+                <legend>Pages</legend>
                 <label for="book-pages">Number of Pages:</label>
-                <input id="book-pages" type="text">
+                <input id="book-pages" type="number" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Read</legend>
+                <label for="book-isRead">I've read this book:</label>
+                <input id="book-isRead" type="checkbox">
+            </fieldset>
+
+            <div id="form-div">
             </div>
 
-            <div id="buttons-div">
-                <button id="cancel-btn" formmethod="dialog">Cancel</button>
+            <div id="form-buttons-div">
+                <button id="cancel-btn" formmethod="dialog" formnovalidate>Cancel</button>
                 <button id="submit-btn" type="submit">Submit</button>
             </div>
-
         </form>
-    </dialog>-->
+    </dialog>
 </body>
 </html>
